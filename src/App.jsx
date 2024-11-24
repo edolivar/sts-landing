@@ -144,11 +144,7 @@ export default function App() {
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Secure Tech Solutions</span>
-                <img
-                  alt="STS"
-                  src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
-                  className="h-8 w-auto"
-                />
+                <img alt="STS" src="/sts_favicon.svg" className="h-8 w-auto" />
               </a>
               <button
                 type="button"
