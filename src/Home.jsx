@@ -217,7 +217,7 @@ export default function Home() {
                 </p>
                 <div className="mt-10 flex items-center justify-center gap-x-6">
                   <a
-                    href="mailto:admin@securetechsolutions.com"
+                    href="mailto:info@stsit.biz"
                     className="rounded-md bg-stsLight px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-stsDark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-stsDark"
                   >
                     Contact Us
@@ -394,7 +394,7 @@ export default function Home() {
                 </blockquote>
                 <figcaption className="mt-6 text-base text-white">
                   <div className="font-semibold">Gus P.</div>
-                  <div className="mt-1">CEO of STS</div>
+                  <div className="mt-1">Founder of STS</div>
                 </figcaption>
               </figure>
             </div>
