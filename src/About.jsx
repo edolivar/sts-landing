@@ -1,5 +1,5 @@
 "use client";
-
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
@@ -78,10 +78,10 @@ export default function About() {
           className="flex items-center justify-between p-6 lg:px-8"
         >
           <div className="flex lg:flex-1">
-            <a href="/" className="-m-1.5 p-1.5">
+            <Link to="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Secure Tech Solutions</span>
               <img alt="STS" src="/sts_favicon.svg" className="h-12 w-auto" />
-            </a>
+            </Link>
           </div>
           <div className="flex lg:hidden">
             <button
@@ -94,15 +94,29 @@ export default function About() {
             </button>
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
-            {navigation.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="text-sm/6 font-semibold text-gray-900"
-              >
-                {item.name}
-              </a>
-            ))}
+            {navigation.map((item) =>
+              item.href.startsWith("http") ? (
+                // External link - use <a>
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className="text-sm/6 font-semibold text-gray-900"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {item.name}
+                </a>
+              ) : (
+                // Internal link - use <Link>
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className="text-sm/6 font-semibold text-gray-900"
+                >
+                  {item.name}
+                </Link>
+              )
+            )}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end"></div>
         </nav>
