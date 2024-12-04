@@ -394,7 +394,7 @@ export default function Home() {
                 </blockquote>
                 <figcaption className="mt-6 text-base text-white">
                   <div className="font-semibold">Gus P.</div>
-                  <div className="mt-1">Founder of STS</div>
+                  <div className="mt-1">Founder</div>
                 </figcaption>
               </figure>
             </div>
