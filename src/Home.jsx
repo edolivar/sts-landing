@@ -263,44 +263,71 @@ export default function Home() {
         </div>
 
         {/* Logo cloud */}
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-            <img
-              alt="LMA"
-              src="/STSCustomerLogos/LMA_Logo.jpg"
-              width={284}
-              height={86}
-              className="col-span-2 max-h-16 w-full object-contain lg:col-span-1"
-            />
-            <img
-              alt="LO"
-              src="/STSCustomerLogos/LO_Logo.png"
-              width={284}
-              height={86}
-              className="col-span-2 max-h-20 w-full object-contain lg:col-span-1"
-            />
-            <img
-              alt="OSA"
-              src="/STSCustomerLogos/OSA_Logo.png"
-              width={284}
-              height={86}
-              className="col-span-2 max-h-20 w-full object-contain lg:col-span-1"
-            />
-            <img
-              alt="PLG"
-              src="/STSCustomerLogos/PLG_Logo.png"
-              width={284}
-              height={86}
-              className="col-span-2 max-h-20 w-full object-contain sm:col-start-2 lg:col-span-1"
-            />
-            <img
-              alt="Summit"
-              src="/STSCustomerLogos/Summit_Logo.png"
-              width={284}
-              height={86}
-              className="col-span-2 col-start-2 max-h-16 w-full object-contain sm:col-start-auto lg:col-span-1"
-            />
+        <div className="mx-auto max-w-auto px-6 lg:px-8">
+          <div className="w-full flex justify-center overflow-hidden">
+            <div className="max-w-4xl w-full flex overflow-hidden relative">
+              {/* Set height on the wrapper div */}
+              <div className="flex items-center min-w-max space-x-32 animate-loop-scroll h-28">
+                <img
+                  alt="LMA"
+                  src="/STSCustomerLogos/LMA_Logo.jpg"
+                  className="h-full w-auto"
+                />
+                <img
+                  alt="LO"
+                  src="/STSCustomerLogos/LO_Logo.png"
+                  className="h-full w-auto"
+                />
+                <img
+                  alt="OSA"
+                  src="/STSCustomerLogos/OSA_Logo.png"
+                  className="h-full w-auto"
+                />
+                <img
+                  alt="PLG"
+                  src="/STSCustomerLogos/PLG_Logo.png"
+                  className="h-full w-auto"
+                />
+                <img
+                  alt="Summit"
+                  src="/STSCustomerLogos/Summit_Logo.png"
+                  className="h-full w-auto"
+                />
+              </div>
+              {/* Duplicate Set of Logos */}
+              <div
+                className="flex items-center min-w-max space-x-32 absolute left-32 top-0 animate-loop-scroll-delay h-28"
+                aria-hidden="true"
+              >
+                <img
+                  alt="LMA"
+                  src="/STSCustomerLogos/LMA_Logo.jpg"
+                  className="h-full w-auto"
+                />
+                <img
+                  alt="LO"
+                  src="/STSCustomerLogos/LO_Logo.png"
+                  className="h-full w-auto"
+                />
+                <img
+                  alt="OSA"
+                  src="/STSCustomerLogos/OSA_Logo.png"
+                  className="h-full w-auto"
+                />
+                <img
+                  alt="PLG"
+                  src="/STSCustomerLogos/PLG_Logo.png"
+                  className="h-full w-auto"
+                />
+                <img
+                  alt="Summit"
+                  src="/STSCustomerLogos/Summit_Logo.png"
+                  className="h-full w-auto"
+                />
+              </div>
+            </div>
           </div>
+
           <div className="mt-32 flex justify-center">
             <p className="relative rounded-full px-4 py-1.5 text-sm/6 text-gray-600 ring-1 ring-inset ring-gray-900/10 hover:ring-gray-900/20">
               <span className="hidden md:inline">
