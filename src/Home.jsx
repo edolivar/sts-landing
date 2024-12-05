@@ -265,8 +265,8 @@ export default function Home() {
         {/* Logo cloud */}
         <div className="mx-auto max-w-auto px-6 lg:px-8">
           <div className="w-full flex justify-center overflow-hidden">
-            <div className="max-w-4xl w-full flex overflow-hidden relative">
-              {/* Set height on the wrapper div */}
+            <div className="max-w-sm w-full flex overflow-hidden relative md:max-w-4xl">
+              {/* First Set of Logos */}
               <div className="flex items-center min-w-max space-x-32 animate-loop-scroll h-28">
                 <img
                   alt="LMA"
@@ -293,10 +293,13 @@ export default function Home() {
                   src="/STSCustomerLogos/Summit_Logo.png"
                   className="h-full w-auto"
                 />
+                {/* Add Extra Space */}
+                <div className="w-12"></div>
               </div>
-              {/* Duplicate Set of Logos */}
+
+              {/* Second Set of Logos with Margin for Spacing */}
               <div
-                className="flex items-center min-w-max space-x-32 absolute left-32 top-0 animate-loop-scroll-delay h-28"
+                className="flex items-center min-w-max space-x-32 animate-loop-scroll-delay h-28 absolute top-0"
                 aria-hidden="true"
               >
                 <img
@@ -324,6 +327,8 @@ export default function Home() {
                   src="/STSCustomerLogos/Summit_Logo.png"
                   className="h-full w-auto"
                 />
+                {/* Add Extra Space */}
+                <div className="w-12"></div>
               </div>
             </div>
           </div>
