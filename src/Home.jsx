@@ -11,6 +11,7 @@ import {
   LockClosedIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
+import ImageCarousel from "./helpers/ImageCarousel";
 
 const navigation = [
   { name: "Ticket Portal", href: "https://ticket.securetechsolutions.biz/" },
@@ -232,9 +233,10 @@ export default function Home() {
                 <div className="mt-10 flex items-center justify-center gap-x-6">
                   <a
                     href="mailto:info@stsit.biz"
-                    className="rounded-md bg-stsLight px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-stsDark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-stsDark"
+                    className="relative rounded px-5 py-2.5 overflow-hidden group bg-stsLight relative hover:bg-gradient-to-r hover:from-stsDark hover:to-stsDark text-white hover:ring-2 hover:ring-offset-2 hover:ring-stsDark transition-all ease-out duration-300"
                   >
-                    Contact Us
+                    <span className="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
+                    <span className="relative">Contact Us</span>
                   </a>
                   <a
                     href="#faqs"
@@ -333,6 +335,10 @@ export default function Home() {
               cyber threats.
             </p>
           </div>
+
+          {/* Image section */}
+          <ImageCarousel />
+
           <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
             <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
               {features.map((feature) => (
@@ -461,7 +467,6 @@ export default function Home() {
         </div>
       </main>
 
-      {/* Footer */}
       {/* Footer */}
       <footer className="relative mx-auto mt-32 max-w-7xl px-6 lg:px-8">
         <div className="border-t border-gray-900/10 py-16 sm:py-24 lg:py-32">
