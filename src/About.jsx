@@ -406,12 +406,12 @@ export default function About() {
                   <ul role="list" className="mt-6 space-y-4">
                     {footerNavigation.company.map((item) => (
                       <li key={item.name}>
-                        <a
-                          href={item.href}
+                        <Link
+                          to={item.href}
                           className="text-sm/6 text-gray-600 hover:text-gray-900"
                         >
                           {item.name}
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </ul>

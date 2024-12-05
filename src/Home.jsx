@@ -83,7 +83,7 @@ const footerNavigation = {
     { name: "Ticket Portal", href: "https://ticket.securetechsolutions.biz/" },
     { name: "SFTP Portal", href: "https://us3.hostedftp.com/login/" },
   ],
-  company: [{ name: "About", href: "#" }],
+  company: [{ name: "About", href: "/about" }],
   legal: [
     { name: "Terms of service", href: "#" },
     { name: "Privacy policy", href: "#" },
@@ -497,12 +497,12 @@ export default function Home() {
                   <ul role="list" className="mt-6 space-y-4">
                     {footerNavigation.company.map((item) => (
                       <li key={item.name}>
-                        <a
-                          href={item.href}
+                        <Link
+                          to={item.href}
                           className="text-sm/6 text-gray-600 hover:text-gray-900"
                         >
                           {item.name}
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </ul>
