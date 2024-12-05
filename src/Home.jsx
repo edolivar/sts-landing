@@ -265,7 +265,7 @@ export default function Home() {
         {/* Logo cloud */}
         <div className="mx-auto max-w-auto px-6 lg:px-8">
           <div className="w-full flex justify-center overflow-hidden">
-            <div className="max-w-sm w-full flex overflow-hidden relative md:max-w-4xl">
+            <div className="max-w-xs w-full flex overflow-hidden relative md:max-w-4xl">
               {/* First Set of Logos */}
               <div className="flex items-center min-w-max space-x-32 animate-loop-scroll h-28">
                 <img
@@ -294,7 +294,7 @@ export default function Home() {
                   className="h-full w-auto"
                 />
                 {/* Add Extra Space */}
-                <div className="w-12"></div>
+                <div className="w-6 md:w-12"></div>
               </div>
 
               {/* Second Set of Logos with Margin for Spacing */}
@@ -328,7 +328,7 @@ export default function Home() {
                   className="h-full w-auto"
                 />
                 {/* Add Extra Space */}
-                <div className="w-12"></div>
+                <div className="w-6 md:w-12"></div>
               </div>
             </div>
           </div>
