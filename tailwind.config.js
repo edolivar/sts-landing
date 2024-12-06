@@ -8,8 +8,8 @@ export default {
         stsDark: "#0c3644", // Replace with your hex code
       },
       animation: {
-        "loop-scroll": "loop-scroll 30s linear infinite",
-        "loop-scroll-delay": "loop-scroll-delay 30s linear infinite",
+        "loop-scroll": "loop-scroll 60s linear infinite",
+        "loop-scroll-delay": "loop-scroll-delay 60s linear infinite",
       },
       keyframes: {
         "loop-scroll": {
