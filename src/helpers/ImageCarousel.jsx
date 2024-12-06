@@ -22,10 +22,10 @@ const ImageCarousel = () => {
       // Change image after the fade-out transition
       setTimeout(() => {
         setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-        setOpacity(1); // Full opacity when fading in
+        setOpacity(0.1); // Full opacity when fading in
         setFadeIn(true); // Start fading in
       }, 500); // Match with the fade-out duration
-    }, 10000); // Change image every 5 seconds
+    }, 8000); // Change image every 5 seconds
 
     return () => clearInterval(interval); // Cleanup on component unmount
   }, [images.length]);
