@@ -6,7 +6,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
   { name: "Ticket Portal", href: "https://ticket.securetechsolutions.biz/" },
-  { name: "SFTP Portal", href: "https://us3.hostedftp.com/login/" },
+  { name: "SFTP Portal", href: "http://ftp.securetechsolutions.biz" },
   { name: "About STS", href: "/about" },
 ];
 const stats = [

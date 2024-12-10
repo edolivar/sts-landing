@@ -14,7 +14,7 @@ import ImageCarousel from "./helpers/ImageCarousel";
 
 const navigation = [
   { name: "Ticket Portal", href: "https://ticket.securetechsolutions.biz/" },
-  { name: "SFTP Portal", href: "https://us3.hostedftp.com/login/" },
+  { name: "SFTP Portal", href: "http://ftp.securetechsolutions.biz" },
   { name: "About STS", href: "/about" },
 ];
 
