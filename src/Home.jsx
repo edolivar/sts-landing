@@ -335,9 +335,9 @@ export default function Home() {
         {/* Logo cloud */}
         <div className="mx-auto max-w-auto px-6 lg:px-8">
           <div className="w-full flex justify-center overflow-hidden">
-            <div className="max-w-xs w-full flex overflow-hidden relative md:max-w-4xl">
+            <div className="max-w-xs w-full flex overflow-hidden relative md:max-w-3xl">
               {/* First Set of Logos */}
-              <div className="flex items-center min-w-max space-x-32 animate-loop-scroll will-change-transform h-28">
+              <div className="flex items-center min-w-max space-x-24 animate-loop-scroll will-change-transform h-28">
                 {logoData.map((logo, index) => (
                   <img
                     key={index}
@@ -352,7 +352,7 @@ export default function Home() {
 
               {/* Second Set of Logos with Margin for Spacing */}
               <div
-                className="flex items-center min-w-max space-x-32 animate-loop-scroll-delay h-28 absolute will-change-transform top-0"
+                className="flex items-center min-w-max space-x-24 animate-loop-scroll-delay h-28 absolute will-change-transform top-0"
                 aria-hidden="true"
               >
                 {logoData.map((logo, index) => (
