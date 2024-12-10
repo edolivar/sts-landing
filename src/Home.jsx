@@ -12,6 +12,64 @@ import {
 } from "@heroicons/react/24/outline";
 import ImageCarousel from "./helpers/ImageCarousel";
 
+const logoData = [
+  {
+    alt: "LMA",
+    src: "/STSCustomerLogos/LMA_Logo.jpg",
+    className: "h-full w-auto",
+  },
+  {
+    alt: "Solinco",
+    src: "/STSCustomerLogos/Solinco_Logo.png",
+    className: "h-1/3 w-auto",
+  },
+  {
+    alt: "OSA",
+    src: "/STSCustomerLogos/OSA_Logo.png",
+    className: "h-full w-auto",
+  },
+  {
+    alt: "PLG",
+    src: "/STSCustomerLogos/PLG_Logo.png",
+    className: "h-full w-auto",
+  },
+  {
+    alt: "Steamericas",
+    src: "/STSCustomerLogos/Steamericas_Logo.svg",
+    className: "h-1/2 w-auto",
+  },
+  {
+    alt: "UAC",
+    src: "/STSCustomerLogos/UAC_Logo.png",
+    className: "h-full w-auto",
+  },
+  {
+    alt: "Oculus",
+    src: "/STSCustomerLogos/Oculus_Logo.png",
+    className: "h-3/4 w-auto",
+  },
+  {
+    alt: "Boyd",
+    src: "/STSCustomerLogos/Boyd_Logo.png",
+    className: "h-full w-auto",
+  },
+  {
+    alt: "Summit",
+    src: "/STSCustomerLogos/Summit_Logo.png",
+    className: "h-full w-auto",
+  },
+  {
+    alt: "LO",
+    src: "/STSCustomerLogos/LO_Logo.png",
+    className: "h-full w-auto",
+  },
+  {
+    alt: "Stuart",
+    src: "/STSCustomerLogos/Stuart_Logo.png",
+    className: "h-1/3 w-auto",
+  },
+];
+
 const navigation = [
   { name: "Ticket Portal", href: "https://ticket.securetechsolutions.biz/" },
   { name: "SFTP Portal", href: "http://ftp.securetechsolutions.biz" },
@@ -280,61 +338,14 @@ export default function Home() {
             <div className="max-w-xs w-full flex overflow-hidden relative md:max-w-4xl">
               {/* First Set of Logos */}
               <div className="flex items-center min-w-max space-x-32 animate-loop-scroll will-change-transform h-28">
-                <img
-                  alt="LMA"
-                  src="/STSCustomerLogos/LMA_Logo.jpg"
-                  className="h-full w-auto"
-                />
-                <img
-                  alt="Solinco"
-                  src="/STSCustomerLogos/Solinco_Logo.png"
-                  className="h-1/3 w-auto"
-                />
-                <img
-                  alt="OSA"
-                  src="/STSCustomerLogos/OSA_Logo.png"
-                  className="h-full w-auto"
-                />
-                <img
-                  alt="PLG"
-                  src="/STSCustomerLogos/PLG_Logo.png"
-                  className="h-full w-auto"
-                />
-                <img
-                  alt="Steamericas"
-                  src="/STSCustomerLogos/Steamericas_Logo.svg"
-                  className="h-1/2 w-auto"
-                />
-                <img
-                  alt="UAC"
-                  src="/STSCustomerLogos/UAC_Logo.png"
-                  className="h-full w-auto"
-                />
-                <img
-                  alt="Oculus"
-                  src="/STSCustomerLogos/Oculus_Logo.png"
-                  className="h-3/4 w-auto"
-                />
-                <img
-                  alt="Boyd"
-                  src="/STSCustomerLogos/Boyd_Logo.png"
-                  className="h-full w-auto"
-                />
-                <img
-                  alt="Summit"
-                  src="/STSCustomerLogos/Summit_Logo.png"
-                  className="h-full w-auto"
-                />
-                <img
-                  alt="LO"
-                  src="/STSCustomerLogos/LO_Logo.png"
-                  className="h-full w-auto"
-                />
-                <img
-                  alt="Stuart"
-                  src="/STSCustomerLogos/Stuart_Logo.png"
-                  className="h-1/3 w-auto"
-                />
+                {logoData.map((logo, index) => (
+                  <img
+                    key={index}
+                    alt={logo.alt}
+                    src={logo.src}
+                    className={logo.className}
+                  />
+                ))}
                 {/* Add Extra Space */}
                 <div className="w-6 md:w-12"></div>
               </div>
@@ -344,61 +355,14 @@ export default function Home() {
                 className="flex items-center min-w-max space-x-32 animate-loop-scroll-delay h-28 absolute will-change-transform top-0"
                 aria-hidden="true"
               >
-                <img
-                  alt="LMA"
-                  src="/STSCustomerLogos/LMA_Logo.jpg"
-                  className="h-full w-auto"
-                />
-                <img
-                  alt="Solinco"
-                  src="/STSCustomerLogos/Solinco_Logo.png"
-                  className="h-1/3 w-auto"
-                />
-                <img
-                  alt="OSA"
-                  src="/STSCustomerLogos/OSA_Logo.png"
-                  className="h-full w-auto"
-                />
-                <img
-                  alt="PLG"
-                  src="/STSCustomerLogos/PLG_Logo.png"
-                  className="h-full w-auto"
-                />
-                <img
-                  alt="Steamericas"
-                  src="/STSCustomerLogos/Steamericas_Logo.svg"
-                  className="h-1/2 w-auto"
-                />
-                <img
-                  alt="UAC"
-                  src="/STSCustomerLogos/UAC_Logo.png"
-                  className="h-full w-auto"
-                />
-                <img
-                  alt="Oculus"
-                  src="/STSCustomerLogos/Oculus_Logo.png"
-                  className="h-3/4 w-auto"
-                />
-                <img
-                  alt="Boyd"
-                  src="/STSCustomerLogos/Boyd_Logo.png"
-                  className="h-full w-auto"
-                />
-                <img
-                  alt="Summit"
-                  src="/STSCustomerLogos/Summit_Logo.png"
-                  className="h-full w-auto"
-                />
-                <img
-                  alt="LO"
-                  src="/STSCustomerLogos/LO_Logo.png"
-                  className="h-full w-auto"
-                />
-                <img
-                  alt="Stuart"
-                  src="/STSCustomerLogos/Stuart_Logo.png"
-                  className="h-1/3 w-auto"
-                />
+                {logoData.map((logo, index) => (
+                  <img
+                    key={index}
+                    alt={logo.alt}
+                    src={logo.src}
+                    className={logo.className}
+                  />
+                ))}
                 {/* Add Extra Space */}
                 <div className="w-6 md:w-12"></div>
               </div>
