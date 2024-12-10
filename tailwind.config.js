@@ -15,10 +15,14 @@ export default {
         "loop-scroll": {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(-100%)" },
+          "-webkit-0%": { transform: "translateX(0)" },
+          "-webkit-100%": { transform: "translateX(-100%)" },
         },
         "loop-scroll-delay": {
           "0%": { transform: "translateX(100%)" },
           "100%": { transform: "translateX(0)" },
+          "-webkit-0%": { transform: "translateX(100%)" },
+          "-webkit-100%": { transform: "translateX(0)" },
         },
       },
       willChange: {
