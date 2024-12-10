@@ -279,126 +279,144 @@ export default function Home() {
           <div className="w-full flex justify-center overflow-hidden">
             <div className="max-w-xs w-full flex overflow-hidden relative md:max-w-4xl">
               {/* First Set of Logos */}
-              <div className="flex items-center min-w-max space-x-32 animate-loop-scroll h-28">
-                <img
-                  alt="LMA"
-                  src="/STSCustomerLogos/LMA_Logo.jpg"
-                  className="h-full w-auto"
-                />
-                <img
-                  alt="Solinco"
-                  src="/STSCustomerLogos/Solinco_Logo.png"
-                  className="h-1/3 w-auto"
-                />
-                <img
-                  alt="OSA"
-                  src="/STSCustomerLogos/OSA_Logo.png"
-                  className="h-full w-auto"
-                />
-                <img
-                  alt="PLG"
-                  src="/STSCustomerLogos/PLG_Logo.png"
-                  className="h-full w-auto"
-                />
-                <img
-                  alt="Steamericas"
-                  src="/STSCustomerLogos/Steamericas_Logo.svg"
-                  className="h-1/2 w-auto"
-                />
-                <img
-                  alt="UAC"
-                  src="/STSCustomerLogos/UAC_Logo.png"
-                  className="h-full w-auto"
-                />
-                <img
-                  alt="Oculus"
-                  src="/STSCustomerLogos/Oculus_Logo.png"
-                  className="h-3/4 w-auto"
-                />
-                <img
-                  alt="Boyd"
-                  src="/STSCustomerLogos/Boyd_Logo.png"
-                  className="h-full w-auto"
-                />
-                <img
-                  alt="Summit"
-                  src="/STSCustomerLogos/Summit_Logo.png"
-                  className="h-full w-auto"
-                />
-                <img
-                  alt="LO"
-                  src="/STSCustomerLogos/LO_Logo.png"
-                  className="h-full w-auto"
-                />
-                <img
-                  alt="Stuart"
-                  src="/STSCustomerLogos/Stuart_Logo.png"
-                  className="h-1/3 w-auto"
-                />
+              <div className="flex items-center min-w-max space-x-32 animate-loop-scroll will-change-transform h-28">
+                {[
+                  {
+                    alt: "LMA",
+                    src: "/STSCustomerLogos/LMA_Logo.jpg",
+                    height: "h-full",
+                  },
+                  {
+                    alt: "Solinco",
+                    src: "/STSCustomerLogos/Solinco_Logo.png",
+                    height: "h-1/3",
+                  },
+                  {
+                    alt: "OSA",
+                    src: "/STSCustomerLogos/OSA_Logo.png",
+                    height: "h-full",
+                  },
+                  {
+                    alt: "PLG",
+                    src: "/STSCustomerLogos/PLG_Logo.png",
+                    height: "h-full",
+                  },
+                  {
+                    alt: "Steamericas",
+                    src: "/STSCustomerLogos/Steamericas_Logo.svg",
+                    height: "h-1/2",
+                  },
+                  {
+                    alt: "UAC",
+                    src: "/STSCustomerLogos/UAC_Logo.png",
+                    height: "h-full",
+                  },
+                  {
+                    alt: "Oculus",
+                    src: "/STSCustomerLogos/Oculus_Logo.png",
+                    height: "h-3/4",
+                  },
+                  {
+                    alt: "Boyd",
+                    src: "/STSCustomerLogos/Boyd_Logo.png",
+                    height: "h-full",
+                  },
+                  {
+                    alt: "Summit",
+                    src: "/STSCustomerLogos/Summit_Logo.png",
+                    height: "h-full",
+                  },
+                  {
+                    alt: "LO",
+                    src: "/STSCustomerLogos/LO_Logo.png",
+                    height: "h-full",
+                  },
+                  {
+                    alt: "Stuart",
+                    src: "/STSCustomerLogos/Stuart_Logo.png",
+                    height: "h-1/3",
+                  },
+                ].map(({ alt, src, height }, idx) => (
+                  <img
+                    key={idx}
+                    alt={alt}
+                    src={src}
+                    className={`${height} w-auto`}
+                  />
+                ))}
                 {/* Add Extra Space */}
                 <div className="w-6 md:w-12"></div>
               </div>
 
               {/* Second Set of Logos with Margin for Spacing */}
               <div
-                className="flex items-center min-w-max space-x-32 animate-loop-scroll-delay h-28 absolute top-0"
+                className="flex items-center min-w-max space-x-32 animate-loop-scroll-delay will-change-transform h-28 absolute top-0"
                 aria-hidden="true"
               >
-                <img
-                  alt="LMA"
-                  src="/STSCustomerLogos/LMA_Logo.jpg"
-                  className="h-full w-auto"
-                />
-                <img
-                  alt="Solinco"
-                  src="/STSCustomerLogos/Solinco_Logo.png"
-                  className="h-1/3 w-auto"
-                />
-                <img
-                  alt="OSA"
-                  src="/STSCustomerLogos/OSA_Logo.png"
-                  className="h-full w-auto"
-                />
-                <img
-                  alt="PLG"
-                  src="/STSCustomerLogos/PLG_Logo.png"
-                  className="h-full w-auto"
-                />
-                <img
-                  alt="Steamericas"
-                  src="/STSCustomerLogos/Steamericas_Logo.svg"
-                  className="h-1/2 w-auto"
-                />
-                <img
-                  alt="UAC"
-                  src="/STSCustomerLogos/UAC_Logo.png"
-                  className="h-full w-auto"
-                />
-                <img
-                  alt="Oculus"
-                  src="/STSCustomerLogos/Oculus_Logo.png"
-                  className="h-3/4 w-auto"
-                />
-                <img
-                  alt="Boyd"
-                  src="/STSCustomerLogos/Boyd_Logo.png"
-                  className="h-full w-auto"
-                />
-                <img
-                  alt="Summit"
-                  src="/STSCustomerLogos/Summit_Logo.png"
-                  className="h-full w-auto"
-                />
-                <img
-                  alt="LO"
-                  src="/STSCustomerLogos/LO_Logo.png"
-                  className="h-full w-auto"
-                />
-                <img
-                  alt="Stuart"
-                  src="/STSCustomerLogos/Stuart_Logo.png"
-                  className="h-1/3 w-auto"
-                />
+                {[
+                  {
+                    alt: "LMA",
+                    src: "/STSCustomerLogos/LMA_Logo.jpg",
+                    height: "h-full",
+                  },
+                  {
+                    alt: "Solinco",
+                    src: "/STSCustomerLogos/Solinco_Logo.png",
+                    height: "h-1/3",
+                  },
+                  {
+                    alt: "OSA",
+                    src: "/STSCustomerLogos/OSA_Logo.png",
+                    height: "h-full",
+                  },
+                  {
+                    alt: "PLG",
+                    src: "/STSCustomerLogos/PLG_Logo.png",
+                    height: "h-full",
+                  },
+                  {
+                    alt: "Steamericas",
+                    src: "/STSCustomerLogos/Steamericas_Logo.svg",
+                    height: "h-1/2",
+                  },
+                  {
+                    alt: "UAC",
+                    src: "/STSCustomerLogos/UAC_Logo.png",
+                    height: "h-full",
+                  },
+                  {
+                    alt: "Oculus",
+                    src: "/STSCustomerLogos/Oculus_Logo.png",
+                    height: "h-3/4",
+                  },
+                  {
+                    alt: "Boyd",
+                    src: "/STSCustomerLogos/Boyd_Logo.png",
+                    height: "h-full",
+                  },
+                  {
+                    alt: "Summit",
+                    src: "/STSCustomerLogos/Summit_Logo.png",
+                    height: "h-full",
+                  },
+                  {
+                    alt: "LO",
+                    src: "/STSCustomerLogos/LO_Logo.png",
+                    height: "h-full",
+                  },
+                  {
+                    alt: "Stuart",
+                    src: "/STSCustomerLogos/Stuart_Logo.png",
+                    height: "h-1/3",
+                  },
+                ].map(({ alt, src, height }, idx) => (
+                  <img
+                    key={idx}
+                    alt={alt}
+                    src={src}
+                    className={`${height} w-auto`}
+                  />
+                ))}
                 {/* Add Extra Space */}
                 <div className="w-6 md:w-12"></div>
               </div>

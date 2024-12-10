@@ -4,12 +4,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        stsLight: "#168991", // Replace with your hex code
-        stsDark: "#0c3644", // Replace with your hex code
+        stsLight: "#168991", // Replace with your specific color
+        stsDark: "#0c3644", // Replace with your specific color
       },
       animation: {
-        "loop-scroll": "loop-scroll 45s linear infinite",
-        "loop-scroll-delay": "loop-scroll-delay 45s linear infinite",
+        "loop-scroll": "loop-scroll 55s linear infinite",
+        "loop-scroll-delay": "loop-scroll-delay 55s linear infinite",
       },
       keyframes: {
         "loop-scroll": {
@@ -20,6 +20,9 @@ export default {
           "0%": { transform: "translateX(100%)" },
           "100%": { transform: "translateX(0)" },
         },
+      },
+      willChange: {
+        transform: "transform", // Add will-change utility
       },
     },
   },
