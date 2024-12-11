@@ -349,7 +349,7 @@ export default function Home() {
         {/* Logo cloud */}
         <div className="mx-auto w-full px-8 lg:px-12">
           <div className="flex justify-center w-full h-24">
-            <div className="h-full mx-auto w-full sm:w-2/3 md:w-2/5 inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)] [&_img]:max-w-60">
+            <div className="h-full mx-auto lg:mx-48 xl:mx-96 w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)] [&_img]:max-w-60">
               <ul className="flex items-center justify-center md:justify-start h-full space-x-24 animate-infinite-scroll pr-24">
                 {logoData.map((logo, index) => (
                   <li key={index} className="h-full flex items-center">
