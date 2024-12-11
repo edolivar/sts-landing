@@ -108,7 +108,7 @@ export default function Home() {
           aria-label="Global"
           className="flex items-center justify-between p-6 lg:px-8"
         >
-          <div className="flex lg:flex-1">
+          <div className="flex lg:flex-1 justify-center">
             <Link to="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Secure Tech Solutions</span>
               <img alt="STS" src="/sts_favicon.svg" className="h-12 w-auto" />
