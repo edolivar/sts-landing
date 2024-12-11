@@ -13,10 +13,10 @@ export default {
       keyframes: {
         "infinite-scroll": {
           from: {
-            transform: "translateX(0)",
+            transform: "translateX(0) translateZ(1px)",
           },
           to: {
-            transform: "translateX(-100%)",
+            transform: "translateX(-100%) translateZ(1px)",
           },
         },
       },
