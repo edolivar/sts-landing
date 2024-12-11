@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import ImageCarousel from "./helpers/ImageCarousel";
 
 const navigation = [
   { name: "Ticket Portal", href: "https://ticket.securetechsolutions.biz/" },
@@ -340,11 +341,7 @@ export default function About() {
 
         {/* Image section */}
         <div className="mt-32 sm:mt-40 xl:mx-auto xl:max-w-7xl xl:px-8">
-          <img
-            alt=""
-            src="/cybersecurity.jpg"
-            className="aspect-[5/2] w-full object-cover xl:rounded-3xl"
-          />
+          <ImageCarousel />
         </div>
 
         {/* Values section */}
