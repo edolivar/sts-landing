@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-
 const logoData = [
   {
     alt: "LMA",
@@ -59,16 +57,6 @@ const logoData = [
 ];
 
 const LogoAnimation = () => {
-  useEffect(() => {
-    // Force a reflow on page load to fix the animation clipping issue in Safari
-    const animateElement = document.querySelector(".animate-infinite-scroll");
-    if (animateElement) {
-      animateElement.style.animation = "none"; // Temporarily remove animation
-      animateElement.offsetHeight; // Trigger reflow
-      animateElement.style.animation = ""; // Reapply animation
-    }
-  }, []); // This runs only once when the component mounts
-
   return (
     <div className="flex justify-center w-full h-24">
       <div className="h-full mx-auto w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)] [&_img]:max-w-60 md:w-3/5 xl:w-1/2">
