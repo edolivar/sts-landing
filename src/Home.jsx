@@ -332,11 +332,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Logo cloud */}
-        <div className="mx-auto max-w-auto px-6 lg:px-8">
-          <div className="w-full flex justify-center overflow-hidden">
-            <div className="max-w-xs w-full flex overflow-hidden relative md:max-w-3xl">
-              {/* First Set of Logos */}
+        {/* First Set of Logos
               <div className="flex items-center min-w-max space-x-24 animate-loop-scroll will-change-transform h-28">
                 {logoData.map((logo, index) => (
                   <img
@@ -346,26 +342,39 @@ export default function Home() {
                     className={logo.className}
                   />
                 ))}
-                {/* Add Extra Space */}
+                {/* Add Extra Space
                 <div className="w-6 md:w-12"></div>
-              </div>
+              </div> */}
 
-              {/* Second Set of Logos with Margin for Spacing */}
-              <div
-                className="flex items-center min-w-max space-x-24 animate-loop-scroll-delay h-28 absolute will-change-transform top-0"
+        {/* Logo cloud */}
+        <div className="mx-auto w-full px-8 lg:px-12">
+          <div className="flex justify-center w-full h-24">
+            <div className="h-full mx-auto w-full sm:w-2/3 md:w-2/5 inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)] [&_img]:max-w-60">
+              <ul className="flex items-center justify-center md:justify-start h-full space-x-24 animate-infinite-scroll pr-24">
+                {logoData.map((logo, index) => (
+                  <li key={index} className="h-full flex items-center">
+                    <img
+                      src={logo.src}
+                      alt={logo.alt}
+                      className="h-full object-contain"
+                    />
+                  </li>
+                ))}
+              </ul>
+              <ul
+                className="flex items-center justify-center md:justify-start h-full space-x-24 animate-infinite-scroll pr-24"
                 aria-hidden="true"
               >
                 {logoData.map((logo, index) => (
-                  <img
-                    key={index}
-                    alt={logo.alt}
-                    src={logo.src}
-                    className={logo.className}
-                  />
+                  <li key={index} className="h-full flex items-center">
+                    <img
+                      src={logo.src}
+                      alt={logo.alt}
+                      className="h-full object-contain"
+                    />
+                  </li>
                 ))}
-                {/* Add Extra Space */}
-                <div className="w-6 md:w-12"></div>
-              </div>
+              </ul>
             </div>
           </div>
 

@@ -8,49 +8,17 @@ export default {
         stsDark: "#0c3644", // Replace with your specific color
       },
       animation: {
-        "loop-scroll": "loop-scroll 55s linear infinite",
-        "loop-scroll-delay": "loop-scroll-delay 55s linear infinite",
+        "infinite-scroll": "infinite-scroll 25s linear infinite",
       },
       keyframes: {
-        "loop-scroll": {
-          "0%": {
+        "infinite-scroll": {
+          from: {
             transform: "translateX(0)",
-            "-webkit-transform": "translateX(0)",
           },
-          "20%": {
-            transform: "translateX(-25%)",
-            "-webkit-transform": "translateX(-25%)",
-          },
-          "80%": {
-            transform: "translateX(-75%)",
-            "-webkit-transform": "translateX(-75%)",
-          },
-          "100%": {
+          to: {
             transform: "translateX(-100%)",
-            "-webkit-transform": "translateX(-100%)",
           },
         },
-        "loop-scroll-delay": {
-          "0%": {
-            transform: "translateX(100%)",
-            "-webkit-transform": "translateX(100%)",
-          },
-          "20%": {
-            transform: "translateX(75%)",
-            "-webkit-transform": "translateX(75%)",
-          },
-          "80%": {
-            transform: "translateX(25%)",
-            "-webkit-transform": "translateX(25%)",
-          },
-          "100%": {
-            transform: "translateX(0)",
-            "-webkit-transform": "translateX(0)",
-          },
-        },
-      },
-      willChange: {
-        transform: "transform", // Add will-change utility
       },
     },
   },
