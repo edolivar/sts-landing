@@ -5,7 +5,6 @@ import {
   ShieldCheckIcon,
 } from "@heroicons/react/24/outline";
 import PageTemplate from "./helpers/PageTemplate";
-import { LockClosedIcon } from "@heroicons/react/20/solid";
 
 const features = [
   {

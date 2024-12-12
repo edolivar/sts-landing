@@ -88,6 +88,10 @@ const callsToAction = [
     name: "Contact us",
     href: "mailto:info@stsit.biz",
     icon: EnvelopeIcon,
+    action: () => {
+      // Open the email client with the specified address
+      window.location.href = "mailto:info@stsit.biz";
+    },
   },
 ];
 
