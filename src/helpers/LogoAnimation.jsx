@@ -15,14 +15,14 @@ const logoData = [
     className: "h-full w-auto",
   },
   {
+    alt: "Steamericas",
+    src: "/STSCustomerLogos/Steamericas_Logo.png",
+    className: "h-1/2 w-auto",
+  },
+  {
     alt: "PLG",
     src: "/STSCustomerLogos/PLG_Logo.png",
     className: "h-full w-auto",
-  },
-  {
-    alt: "Steamericas",
-    src: "/STSCustomerLogos/Steamericas_Logo.svg",
-    className: "h-1/2 w-auto",
   },
   {
     alt: "UAC",
