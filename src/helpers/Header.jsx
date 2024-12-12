@@ -245,8 +245,12 @@ export default function Header({ styles }) {
                       <button
                         key={item.name}
                         onClick={() => item.action(navigate, location)}
-                        className="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50"
+                        className="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-gray-900 hover:bg-gray-100 group"
                       >
+                        <item.icon
+                          aria-hidden="true"
+                          className="size-5 flex-none text-gray-400 group-hover:text-stsLight"
+                        />
                         {item.name}
                       </button>
                     ))}
