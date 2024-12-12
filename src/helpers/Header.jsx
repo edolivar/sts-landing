@@ -232,7 +232,7 @@ export default function Header({ styles }) {
                       <button
                         key={item.name}
                         onClick={() => navigate(item.href)}
-                        className="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-gray-900 hover:bg-gray-100 group"
+                        className="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-gray-900 group"
                       >
                         <item.icon
                           aria-hidden="true"
@@ -245,7 +245,7 @@ export default function Header({ styles }) {
                       <button
                         key={item.name}
                         onClick={() => item.action(navigate, location)}
-                        className="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-gray-900 hover:bg-gray-100 group"
+                        className="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-gray-900 group"
                       >
                         <item.icon
                           aria-hidden="true"
