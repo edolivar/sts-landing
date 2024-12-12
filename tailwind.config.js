@@ -9,6 +9,7 @@ export default {
       },
       animation: {
         "infinite-scroll": "infinite-scroll 45s linear infinite",
+        "horizontal-bounce": "horizontal-bounce 1s ease-in-out infinite",
       },
       keyframes: {
         "infinite-scroll": {
@@ -17,6 +18,14 @@ export default {
           },
           to: {
             transform: "translateX(-100%) translateZ(1px)",
+          },
+        },
+        "horizontal-bounce": {
+          "0%, 100%": {
+            transform: "translateX(0)",
+          },
+          "50%": {
+            transform: "translateX(5px)",
           },
         },
       },
