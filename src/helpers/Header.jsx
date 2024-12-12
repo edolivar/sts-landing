@@ -228,7 +228,20 @@ export default function Header({ styles }) {
                     />
                   </DisclosureButton>
                   <DisclosurePanel className="mt-2 space-y-2">
-                    {[...services, ...callsToAction].map((item) => (
+                    {services.map((item) => (
+                      <button
+                        key={item.name}
+                        onClick={() => navigate(item.href)}
+                        className="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-gray-900 hover:bg-gray-100 group"
+                      >
+                        <item.icon
+                          aria-hidden="true"
+                          className="size-5 flex-none text-gray-400 group-hover:text-stsLight"
+                        />
+                        {item.name}
+                      </button>
+                    ))}
+                    {callsToAction.map((item) => (
                       <button
                         key={item.name}
                         onClick={() => item.action(navigate, location)}
