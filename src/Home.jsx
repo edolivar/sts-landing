@@ -105,8 +105,10 @@ export default function Home() {
                 Safeguarding Businesses through Cutting-edge Techology
               </h1>
               <p className="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">
-                Comprehensive IT Solutions for Your Business Needs—Secure,
-                Manage, and Support All in One Place.
+                Comprehensive Managed IT Solutions to meet your Business
+                Needs—Network, Cyber-Security, Asset/Application Management, and
+                Support All in One Place. We offer affordable Enterprise class
+                solutions and processes to small and medium sized businesses.
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <a
