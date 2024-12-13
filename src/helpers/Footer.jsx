@@ -18,7 +18,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="relative mx-auto mt-32 max-w-7xl px-6 lg:px-8">
+    <footer className="relative mx-auto max-w-7xl px-6 lg:px-8">
       <div className="border-t border-gray-900/10 py-16 sm:py-24 lg:py-32">
         <div className="xl:grid xl:grid-cols-2 xl:gap-8">
           <img alt="Company name" src="/sts_favicon.svg" className="h-12" />
