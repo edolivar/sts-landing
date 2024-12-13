@@ -31,7 +31,7 @@ const features = [
   {
     name: "Advanced security",
     description:
-      "With STS VoIP, businesses can streamline communication and reduce costs by consolidating internet and voice services under a single provider.Simplify your operations and enhance productivity with our comprehensive suite of services tailored to your success.",
+      "With STS VoIP, businesses can streamline communication and reduce costs by consolidating internet and voice services under a single provider. Simplify your operations and enhance productivity with our comprehensive suite of services tailored to your success.",
     icon: FingerPrintIcon,
   },
 ];
