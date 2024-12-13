@@ -156,6 +156,11 @@ export default function Home() {
 
       {/* Logo cloud */}
       <div className="mx-auto w-full px-8 lg:px-12">
+        <div className="py-12">
+          <h2 className="text-center text-lg/8 font-semibold text-gray-900">
+            Trusted by the world’s most innovative teams
+          </h2>
+        </div>
         <LogoAnimation />
 
         <div className="mt-32 flex justify-center">
