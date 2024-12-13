@@ -18,10 +18,10 @@ import {
   Bars3Icon,
   CursorArrowRaysIcon,
   XMarkIcon,
-  FolderArrowDownIcon,
-  TicketIcon,
   CpuChipIcon,
   FingerPrintIcon,
+  CubeTransparentIcon,
+  ServerStackIcon,
 } from "@heroicons/react/24/outline";
 
 import {
@@ -32,22 +32,22 @@ import {
 
 const services = [
   {
-    name: "Simulated Phishing",
-    description: "Train against phishing threats.",
-    href: "/phishing-info",
+    name: "IT Strategy",
+    description: "Optimizing IT, Empowering Success.",
+    href: "/plan-info",
+    icon: CubeTransparentIcon,
+  },
+  {
+    name: "Cybersecurity",
+    description: "Protect your business.",
+    href: "/cyber-info",
     icon: CursorArrowRaysIcon,
   },
   {
-    name: "SFTP Client",
-    description: "Securely transfer and share files.",
-    href: "/sftp-info",
-    icon: FolderArrowDownIcon,
-  },
-  {
-    name: "Ticket Client",
-    description: "24/7 exclusive portal for IT support.",
-    href: "/ticket-info",
-    icon: TicketIcon,
+    name: "Managed Services",
+    description: "Streamline your operations.",
+    href: "/managed-info",
+    icon: ServerStackIcon,
   },
   {
     name: "Asset Management",
