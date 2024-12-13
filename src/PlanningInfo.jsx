@@ -60,7 +60,7 @@ export default function PlanningInfo() {
                   <p>
                     “Secure Tech Solutions transformed our IT infrastructure,
                     delivering unmatched reliability and efficiency. Their
-                    expertise and support made all the difference!.”
+                    expertise and support made all the difference!”
                   </p>
                 </blockquote>
                 <figcaption className="mt-8 flex gap-x-4">

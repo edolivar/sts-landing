@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import PageTemplate from "./helpers/PageTemplate";
 import ScrollToTopLink from "./helpers/ScrollLink";
 
