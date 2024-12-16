@@ -7,11 +7,6 @@ import {
   WifiIcon,
 } from "@heroicons/react/24/outline";
 import PageTemplate from "./helpers/PageTemplate";
-import {
-  ArrowPathIcon,
-  CloudArrowUpIcon,
-  LockClosedIcon,
-} from "@heroicons/react/20/solid";
 
 const features = [
   {

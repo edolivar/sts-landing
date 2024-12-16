@@ -32,7 +32,7 @@ import {
 
 const services = [
   {
-    name: "IT Strategy",
+    name: "IT Solutions",
     description: "Optimizing IT, Empowering Success.",
     href: "/plan-info",
     icon: CubeTransparentIcon,
@@ -125,7 +125,7 @@ export default function Header({ styles }) {
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
           <Popover className="relative">
             <PopoverButton className="flex items-center gap-x-1 pl-1 text-sm/6 font-semibold text-gray-900">
-              Service
+              Services
               <ChevronDownIcon
                 aria-hidden="true"
                 className="size-5 flex-none text-gray-400"

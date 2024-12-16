@@ -4,17 +4,19 @@ import {
   EyeSlashIcon,
   CodeBracketIcon,
   EnvelopeIcon,
+  FolderArrowDownIcon,
+  MapIcon,
 } from "@heroicons/react/24/outline";
 
 const features = [
   {
-    name: "Encryption",
+    name: "Data encryption",
     description:
       "Files are encrypted when uploading and download, all communications with our servers are encrypted.",
     icon: LockClosedIcon,
   },
   {
-    name: "Privacy",
+    name: "User authentication and authorization",
     description:
       "No users can access files they shouldn’t. This privacy protection is at the heart of our secure file sharing service.",
     icon: EyeSlashIcon,
@@ -26,10 +28,21 @@ const features = [
     icon: CodeBracketIcon,
   },
   {
-    name: "Notifications",
+    name: "Remote team collaboration",
     description:
-      "Email notifications are sent when shared files are accessed, or when files are uploaded.",
+      "Facilitating secure file sharing among employees working remotely.",
     icon: EnvelopeIcon,
+  },
+  {
+    name: "Customer data exchange",
+    description: "Sharing files with clients, partners, and suppliers.",
+    icon: FolderArrowDownIcon,
+  },
+  {
+    name: "Audit trails:",
+    description:
+      "Track all file transfers for compliance and security purposes.",
+    icon: MapIcon,
   },
   // ...
 ];
@@ -48,9 +61,9 @@ export default function SFTPInfo() {
                   Full Encryption
                 </p>
                 <p className="mt-6 text-lg/8 text-gray-600">
-                  Protect your sensitive data with STS SFTP Cloud. Our advanced
-                  encryption and security measures ensure the confidentiality
-                  and integrity of your files.
+                  Businesses with limited IT resources and budgets need secure
+                  file transfer solutions for regulatory compliance and best
+                  practice for:
                 </p>
                 <dl className="mt-10 max-w-xl space-y-8 text-base/7 text-gray-600 lg:max-w-none">
                   {features.map((feature) => (
@@ -66,6 +79,10 @@ export default function SFTPInfo() {
                     </div>
                   ))}
                 </dl>
+                <p className="mt-6 text-lg/8 text-gray-600">
+                  Our SFTP solution offers flexible plans and pricing options to
+                  suit the needs of different businesses.
+                </p>
               </div>
             </div>
             <img
