@@ -208,9 +208,63 @@ export default function About() {
         </div>
       </div>
 
-      {/* Image section */}
-      <div className="mt-32 sm:mt-40 xl:mx-auto xl:max-w-7xl xl:px-8">
-        <ImageCarousel />
+      {/* Testimonial section */}
+      <div className="mx-auto mt-32 max-w-7xl sm:mt-56 sm:px-6 lg:px-8">
+        <div className="relative overflow-hidden bg-gray-900 px-6 py-20 shadow-xl sm:rounded-3xl sm:px-10 sm:py-24 md:px-12 lg:px-20">
+          <div className="absolute inset-0 bg-gray-900/90 mix-blend-multiply" />
+          <img
+            alt=""
+            src="/ceo.png"
+            className="absolute inset-y-20 right-20 w-72 h-auto object-cover rounded-b-lg saturate-0 brightness-75 hidden xl:block"
+          />
+
+          <div
+            aria-hidden="true"
+            className="absolute -left-80 -top-56 transform-gpu blur-3xl"
+          >
+            <div
+              style={{
+                clipPath:
+                  "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
+              }}
+              className="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-r from-[#168991] to-[#0c3644] opacity-[0.45]"
+            />
+          </div>
+          <div
+            aria-hidden="true"
+            className="hidden md:absolute md:bottom-16 md:left-[50rem] md:block md:transform-gpu md:blur-3xl"
+          >
+            <div
+              style={{
+                clipPath:
+                  "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
+              }}
+              className="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-r from-[#168991] to-[#0c3644] opacity-25"
+            />
+          </div>
+          <div className="relative mx-auto max-w-2xl lg:mx-0">
+            <img alt="" src="/sts_white.svg" className="h-20 w-auto" />
+            <figure>
+              <blockquote className="mt-6 text-lg font-semibold text-white sm:text-lg">
+                <p>
+                  “At Secure Tech Solutions, we’re dedicated to providing
+                  businesses with reliable, cutting-edge solutions that protect
+                  their digital assets and streamline their operations. Our
+                  comprehensive suite of services—ranging from managed SFTP
+                  clients and VoIP systems to advanced cybersecurity solutions
+                  and 24/7 support—empowers our clients to thrive in an
+                  ever-evolving technological landscape. Our team’s commitment
+                  to excellence ensures that your business is always one step
+                  ahead, secure, and ready to grow.”
+                </p>
+              </blockquote>
+              <figcaption className="mt-6 text-base text-white">
+                <div className="font-semibold">Gus P.</div>
+                <div className="mt-1">Founder</div>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
       </div>
 
       {/* Values section */}
