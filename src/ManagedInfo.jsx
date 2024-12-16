@@ -9,11 +9,11 @@ export default function ManagedInfo() {
           <h2 className="mt-2 text-6xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
             Transform Your Business with Managed IT Services
           </h2>
-          <p className="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-lg">
+          <p className="mt-8 text-pretty text-lg font-medium text-stsLight sm:text-lg">
             Empower Your Organization with Expert IT Support and Strategic
             Security Solutions.
           </p>
-          <p className="mt-8">
+          <p className="mt-8 text-gray-500">
             Managed IT Services are revolutionizing business operations by
             allowing companies to outsource their IT functions to specialized
             third-party providers, known as Managed Service Providers (MSPs).
@@ -49,7 +49,7 @@ export default function ManagedInfo() {
         </div>
 
         <div className="mx-auto max-w-3xl text-left px-6 lg:px-8">
-          <p className="mt-8">
+          <p className="mt-8 text-gray-500">
             Our 24/7 Managed Help Desk Services ensure that your IT
             infrastructure is always operational, freeing your team to focus on
             core business activities. With both virtual and on-site support, we
