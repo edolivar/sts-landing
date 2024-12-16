@@ -32,13 +32,13 @@ import {
 
 const services = [
   {
-    name: "IT Solutions",
+    name: "IT Solutions & Planning",
     description: "Optimizing IT, Empowering Success.",
     href: "/plan-info",
     icon: CubeTransparentIcon,
   },
   {
-    name: "Cybersecurity",
+    name: "Cybersecurity Awareness Training",
     description: "Protect your business.",
     href: "/cyber-info",
     icon: CursorArrowRaysIcon,
