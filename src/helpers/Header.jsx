@@ -109,7 +109,7 @@ export default function Header({ styles }) {
         <div className="flex lg:flex-1">
           <Link to="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
-            <img alt="" src="/sts_favicon.svg" className="h-12 w-auto" />
+            <img alt="" src="/sts_favicon.svg" className="h-16 w-auto" />
           </Link>
         </div>
         <div className="flex lg:hidden">
