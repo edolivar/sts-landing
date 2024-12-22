@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 const ScrollToTopLink = ({ to, children, className = "" }) => {
@@ -13,12 +12,6 @@ const ScrollToTopLink = ({ to, children, className = "" }) => {
       onClick={handleScrollToTop} // Trigger scroll to top on click
     >
       {children}
-      <span
-        className="inline-block animate-horizontal-bounce"
-        aria-hidden="true"
-      >
-        →
-      </span>
     </Link>
   );
 };

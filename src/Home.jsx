@@ -4,6 +4,8 @@ import {
   CloudArrowUpIcon,
   FingerPrintIcon,
   LockClosedIcon,
+  CubeTransparentIcon,
+  CpuChipIcon,
 } from "@heroicons/react/24/outline";
 import ImageCarousel from "./helpers/ImageCarousel";
 import LogoAnimation from "./helpers/LogoAnimation";
@@ -16,34 +18,65 @@ import {
 } from "@headlessui/react";
 import { MinusSmallIcon, PlusSmallIcon } from "@heroicons/react/24/outline";
 
-const features = [
+import {
+  AcademicCapIcon,
+  ReceiptRefundIcon,
+} from "@heroicons/react/24/outline";
+
+const actions = [
   {
-    name: "SFTP Client",
+    title: "SFTP Client",
     href: "/sftp-info",
+    icon: CloudArrowUpIcon,
+    iconForeground: "text-stsLight",
+    iconBackground: "bg-teal-50",
     description:
       "Secure and simplify your file transfers with our managed SFTP client. Designed for businesses, it ensures encrypted, reliable file exchanges while reducing IT overhead. Let us handle the technical details so you can focus on your operations.",
-    icon: CloudArrowUpIcon,
   },
   {
-    name: "STS Ticket Portal",
+    title: "STS Ticket Portal",
     href: "/ticket-info",
+    icon: LockClosedIcon,
+    iconForeground: "text-stsLight",
+    iconBackground: "bg-teal-50",
     description:
       "Experience peace of mind with our exclusive 24/7 ticketing system, designed to address all your IT and cybersecurity needs. Our experts are always available to ensure your business stays secure and operational around the clock.",
-    icon: LockClosedIcon,
   },
   {
-    name: "Phish Testing",
+    title: "Phish Testing",
     href: "/cyber-info",
-    description:
-      "Strengthen your defenses against phishing attacks with our recurring phishing tests and training courses. Tailored and dynamic, these simulations educate your employees while identifying vulnerabilities, ensuring your team stays prepared and proactive against evolving cyber threats.",
     icon: ArrowPathIcon,
+    iconForeground: "text-stsLight",
+    iconBackground: "bg-teal-50",
+    description:
+      "Strengthen your defenses against phishing attacks with our recurring phishing tests and training courses. Tailored and dynamic, these simulations educate your employees while identifying vulnerabilities, ensuring your team stays prepared and proactive against evolving cyber threats",
   },
   {
-    name: "Advanced security",
+    title: "Advanced security",
     href: "/plan-info",
+    icon: CubeTransparentIcon,
+    iconForeground: "text-stsLight",
+    iconBackground: "bg-teal-50",
     description:
       "With STS VoIP, businesses can streamline communication and reduce costs by consolidating internet and voice services under a single provider. Simplify your operations and enhance productivity with our comprehensive suite of services tailored to your success.",
+  },
+  {
+    title: "Asset Management",
+    href: "/assetmgmt-info",
+    icon: CpuChipIcon,
+    iconForeground: "text-stsLight",
+    iconBackground: "bg-teal-50",
+    description:
+      "Our certified technicians optimize hardware configuration and maintenance. Our platform tracks asset lifecycles, provides real-time insights, and ensures software license compliance, preventing disruptions.",
+  },
+  {
+    title: "MFA",
+    href: "/mfa-info",
     icon: FingerPrintIcon,
+    iconForeground: "text-stsLight",
+    iconBackground: "bg-teal-50",
+    description:
+      "As certified Duo Deployment Partners, we provide robust security with Duo’s Multi-Factor Authentication (MFA), device health checks, adaptive authentication, and secure SSO. Duo helps ensure compliance with detailed reporting and offers competitive pricing for small to medium-sized businesses.",
   },
 ];
 
@@ -80,6 +113,10 @@ const faqs = [
   },
   // Add more questions as needed...
 ];
+
+function classNames(...classes) {
+  return classes.filter(Boolean).join(" ");
+}
 
 export default function Home() {
   return (
@@ -208,38 +245,69 @@ export default function Home() {
           </p>
         </div>
 
-        {/* Image section */}
-        <ImageCarousel />
-
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
-          <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
-            {features.map((feature) => (
-              <div key={feature.name} className="relative pl-16">
-                <dt className="text-base/7 font-semibold text-gray-900">
-                  <div className="absolute left-0 top-0 flex size-10 items-center justify-center rounded-lg bg-stsLight">
-                    <feature.icon
-                      aria-hidden="true"
-                      className="size-6 text-white"
-                    />
-                  </div>
-                  {feature.name}
-                </dt>
-                <dd className="mt-2 text-base/7 text-gray-600">
-                  {feature.description}
-                </dd>
-                <dd className="mt-2 ">
-                  <ScrollToTopLink
-                    to={feature.href}
-                    className="text-sm/6 font-semibold text-gray-900 hover:text-stsLight"
+          <div className="divide-y divide-gray-200 overflow-hidden rounded-lg bg-gray-200 shadow sm:grid sm:grid-cols-2 sm:gap-px sm:divide-y-0">
+            {actions.map((action, actionIdx) => (
+              <div
+                key={action.title}
+                className={classNames(
+                  actionIdx === 0
+                    ? "rounded-tl-lg rounded-tr-lg sm:rounded-tr-none"
+                    : "",
+                  actionIdx === 1 ? "sm:rounded-tr-lg" : "",
+                  actionIdx === actions.length - 2 ? "sm:rounded-bl-lg" : "",
+                  actionIdx === actions.length - 1
+                    ? "rounded-bl-lg rounded-br-lg sm:rounded-bl-none"
+                    : "",
+                  "group relative bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-stsLight"
+                )}
+              >
+                <div>
+                  <span
+                    className={classNames(
+                      action.iconBackground,
+                      action.iconForeground,
+                      "inline-flex rounded-lg p-3 ring-4 ring-white"
+                    )}
                   >
-                    Learn more{" "}
-                  </ScrollToTopLink>
-                </dd>
+                    <action.icon aria-hidden="true" className="size-6" />
+                  </span>
+                </div>
+                <div className="mt-8">
+                  <h3 className="text-base font-semibold text-gray-900">
+                    <ScrollToTopLink
+                      to={action.href}
+                      className="focus:outline-none"
+                    >
+                      {/* Extend touch target to entire panel */}
+                      <span aria-hidden="true" className="absolute inset-0" />
+                      {action.title}
+                    </ScrollToTopLink>
+                  </h3>
+                  <p className="mt-2 text-sm text-gray-500">
+                    {action.description}
+                  </p>
+                </div>
+                <span
+                  aria-hidden="true"
+                  className="pointer-events-none absolute right-6 top-6 text-gray-300 group-hover:text-gray-400"
+                >
+                  <svg
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    className="size-6"
+                  >
+                    <path d="M20 4h1a1 1 0 00-1-1v1zm-1 12a1 1 0 102 0h-2zM8 3a1 1 0 000 2V3zM3.293 19.293a1 1 0 101.414 1.414l-1.414-1.414zM19 4v12h2V4h-2zm1-1H8v2h12V3zm-.707.293l-16 16 1.414 1.414 16-16-1.414-1.414z" />
+                  </svg>
+                </span>
               </div>
             ))}
-          </dl>
+          </div>
         </div>
       </div>
+
+      {/* Image section */}
+      <ImageCarousel />
 
       {/* Pricing section */}
       <div className="py-24 sm:py-32">

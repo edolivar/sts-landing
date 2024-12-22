@@ -43,6 +43,12 @@ export default function ManagedInfo() {
                 className="text-sm/6 font-semibold text-gray-900 hover:text-stsLight"
               >
                 Learn more{" "}
+                <span
+                  className="inline-block animate-horizontal-bounce"
+                  aria-hidden="true"
+                >
+                  →
+                </span>
               </ScrollToTopLink>
             </div>
           </div>
@@ -81,6 +87,12 @@ export default function ManagedInfo() {
                 className="text-sm/6 font-semibold text-white"
               >
                 Learn more{" "}
+                <span
+                  className="inline-block animate-horizontal-bounce"
+                  aria-hidden="true"
+                >
+                  →
+                </span>
               </ScrollToTopLink>
             </div>
             <svg
