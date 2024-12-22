@@ -10,6 +10,8 @@ export default {
       animation: {
         "infinite-scroll": "infinite-scroll 45s linear infinite",
         "horizontal-bounce": "horizontal-bounce 1s ease-in-out infinite",
+        shrink: "shrink 0.3s ease-out forwards",
+        grow: "grow 0.4s ease-out 0.3s forwards",
       },
       keyframes: {
         "infinite-scroll": {
@@ -27,6 +29,14 @@ export default {
           "50%": {
             transform: "translateX(5px)",
           },
+        },
+        shrink: {
+          "0%": { transform: "scale(1)", opacity: "1" },
+          "100%": { transform: "scale(0)", opacity: "0" },
+        },
+        grow: {
+          "0%": { transform: "scale(0)", opacity: "0" },
+          "100%": { transform: "scale(1)", opacity: "1" },
         },
       },
     },

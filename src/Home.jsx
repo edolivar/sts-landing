@@ -9,6 +9,12 @@ import ImageCarousel from "./helpers/ImageCarousel";
 import LogoAnimation from "./helpers/LogoAnimation";
 import PageTemplate from "./helpers/PageTemplate";
 import ScrollToTopLink from "./helpers/ScrollLink";
+import {
+  Disclosure,
+  DisclosureButton,
+  DisclosurePanel,
+} from "@headlessui/react";
+import { MinusSmallIcon, PlusSmallIcon } from "@heroicons/react/24/outline";
 
 const features = [
   {
@@ -261,16 +267,32 @@ export default function Home() {
         <h2 className="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
           Frequently asked questions
         </h2>
-        <dl className="mt-10 space-y-8 divide-y divide-gray-900/10">
+        <dl className="mt-10 space-y-6 divide-y divide-gray-900/10">
           {faqs.map((faq) => (
-            <div key={faq.id} className="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-              <dt className="text-base/7 font-semibold text-gray-900 lg:col-span-5">
-                {faq.question}
+            <Disclosure key={faq.question} as="div" className="pt-6">
+              <dt>
+                <DisclosureButton className="group flex w-full items-start justify-between text-left text-gray-900">
+                  <span className="text-base/7 font-semibold">
+                    {faq.question}
+                  </span>
+                  <span className="ml-6 flex h-7 items-center">
+                    {/* Default + icon */}
+                    <PlusSmallIcon
+                      aria-hidden="true"
+                      className="size-6 group-data-[open]:hidden"
+                    />
+                    {/* Default - icon */}
+                    <MinusSmallIcon
+                      aria-hidden="true"
+                      className="size-6 group-[&:not([data-open])]:hidden"
+                    />
+                  </span>
+                </DisclosureButton>
               </dt>
-              <dd className="mt-4 lg:col-span-7 lg:mt-0">
+              <DisclosurePanel as="dd" className="mt-2 pr-12">
                 <p className="text-base/7 text-gray-600">{faq.answer}</p>
-              </dd>
-            </div>
+              </DisclosurePanel>
+            </Disclosure>
           ))}
         </dl>
       </div>
