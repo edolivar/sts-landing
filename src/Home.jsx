@@ -8,28 +8,33 @@ import {
 import ImageCarousel from "./helpers/ImageCarousel";
 import LogoAnimation from "./helpers/LogoAnimation";
 import PageTemplate from "./helpers/PageTemplate";
+import ScrollToTopLink from "./helpers/ScrollLink";
 
 const features = [
   {
     name: "SFTP Client",
+    href: "/sftp-info",
     description:
       "Secure and simplify your file transfers with our managed SFTP client. Designed for businesses, it ensures encrypted, reliable file exchanges while reducing IT overhead. Let us handle the technical details so you can focus on your operations.",
     icon: CloudArrowUpIcon,
   },
   {
     name: "STS Ticket Portal",
+    href: "/ticket-info",
     description:
       "Experience peace of mind with our exclusive 24/7 ticketing system, designed to address all your IT and cybersecurity needs. Our experts are always available to ensure your business stays secure and operational around the clock.",
     icon: LockClosedIcon,
   },
   {
     name: "Phish Testing",
+    href: "/cyber-info",
     description:
       "Strengthen your defenses against phishing attacks with our recurring phishing tests and training courses. Tailored and dynamic, these simulations educate your employees while identifying vulnerabilities, ensuring your team stays prepared and proactive against evolving cyber threats.",
     icon: ArrowPathIcon,
   },
   {
     name: "Advanced security",
+    href: "/plan-info",
     description:
       "With STS VoIP, businesses can streamline communication and reduce costs by consolidating internet and voice services under a single provider. Simplify your operations and enhance productivity with our comprehensive suite of services tailored to your success.",
     icon: FingerPrintIcon,
@@ -215,6 +220,14 @@ export default function Home() {
                 </dt>
                 <dd className="mt-2 text-base/7 text-gray-600">
                   {feature.description}
+                </dd>
+                <dd className="mt-2 ">
+                  <ScrollToTopLink
+                    to={feature.href}
+                    className="text-sm/6 font-semibold text-gray-900 hover:text-stsLight"
+                  >
+                    Learn more{" "}
+                  </ScrollToTopLink>
                 </dd>
               </div>
             ))}
