@@ -18,11 +18,6 @@ import {
 } from "@headlessui/react";
 import { MinusSmallIcon, PlusSmallIcon } from "@heroicons/react/24/outline";
 
-import {
-  AcademicCapIcon,
-  ReceiptRefundIcon,
-} from "@heroicons/react/24/outline";
-
 const actions = [
   {
     title: "SFTP Client",
