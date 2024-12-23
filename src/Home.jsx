@@ -116,6 +116,9 @@ function classNames(...classes) {
 export default function Home() {
   return (
     <PageTemplate>
+      {/* Image section */}
+      <ImageCarousel />
+
       <div className="pt-14">
         <div
           aria-hidden="true"
@@ -150,7 +153,7 @@ export default function Home() {
               <p className="mt-8 text-pretty text-base/6 font-medium text-gray-500">
                 Comprehensive Managed IT Solutions to meet your Business
                 Needs—Network, Cyber-Security, Asset/Application Management, and
-                Support All in One Place.We offer affordable Enterprise class
+                Support All in One Place. We offer affordable Enterprise class
                 solutions and processes to small and medium sized businesses.
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
@@ -226,8 +229,8 @@ export default function Home() {
       {/* Feature section */}
       <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-32 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
-          <h2 className="text-base/7 font-semibold text-stsLight">
-            secure your business
+          <h2 className="text-base/6 font-semibold text-stsLight">
+            Protect – Automate - Innovate
           </h2>
           <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl lg:text-balance">
             Cybersecurity is what we do.
@@ -300,9 +303,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      {/* Image section */}
-      <ImageCarousel />
 
       {/* Pricing section */}
       <div className="py-24 sm:py-32">

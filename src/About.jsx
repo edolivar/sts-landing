@@ -210,14 +210,8 @@ export default function About() {
 
       {/* Testimonial section */}
       <div className="mx-auto mt-32 max-w-7xl sm:mt-56 sm:px-6 lg:px-8">
-        <div className="relative overflow-hidden bg-gray-900 px-6 py-20 shadow-xl sm:rounded-3xl sm:px-10 sm:py-24 md:px-12 lg:px-20">
+        <div className="relative flex items-center justify-center overflow-hidden bg-gray-900 px-6 py-20 shadow-xl sm:rounded-3xl sm:px-10 sm:py-24 md:px-12 lg:px-20">
           <div className="absolute inset-0 bg-gray-900/90 mix-blend-multiply" />
-          <img
-            alt=""
-            src="/ceo.png"
-            className="absolute inset-y-20 right-20 w-72 h-auto object-cover rounded-b-lg saturate-0 brightness-75 hidden xl:block"
-          />
-
           <div
             aria-hidden="true"
             className="absolute -left-80 -top-56 transform-gpu blur-3xl"
@@ -242,10 +236,10 @@ export default function About() {
               className="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-r from-[#168991] to-[#0c3644] opacity-25"
             />
           </div>
-          <div className="relative mx-auto max-w-2xl lg:mx-0">
-            <img alt="" src="/sts_white.svg" className="h-20 w-auto" />
+          <div className="relative max-w-2xl lg:mx-0">
+            <img alt="" src="/sts_white.svg" className="mx-auto h-20 w-auto" />
             <figure>
-              <blockquote className="mt-6 text-lg font-semibold text-white sm:text-lg">
+              <blockquote className="mt-6 text-lg font-semibold text-white sm:text-lg text-left">
                 <p>
                   “At Secure Tech Solutions, we’re dedicated to providing
                   businesses with reliable, cutting-edge solutions that protect
@@ -258,7 +252,7 @@ export default function About() {
                   ahead, secure, and ready to grow.”
                 </p>
               </blockquote>
-              <figcaption className="mt-6 text-base text-white">
+              <figcaption className="mt-6 text-base text-white text-left">
                 <div className="font-semibold">Gus P.</div>
                 <div className="mt-1">Founder</div>
               </figcaption>
