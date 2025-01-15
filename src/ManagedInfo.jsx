@@ -5,7 +5,7 @@ export default function ManagedInfo() {
   return (
     <PageTemplate>
       <div className="bg-white ">
-        <div className="mx-auto py-9 max-w-3xl text-left px-6 lg:px-8">
+        <div className="mx-auto py-9 max-w-5xl text-left px-6 lg:px-8">
           <h2 className="mt-2 text-6xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
             Transform Your Business with Managed IT Services
           </h2>
@@ -54,7 +54,7 @@ export default function ManagedInfo() {
           </div>
         </div>
 
-        <div className="mx-auto max-w-3xl text-left px-6 lg:px-8">
+        <div className="mx-auto max-w-5xl text-left px-6 lg:px-8">
           <p className="mt-8 text-gray-500">
             Our 24/7 Managed Help Desk Services ensure that your IT
             infrastructure is always operational, freeing your team to focus on
@@ -71,7 +71,7 @@ export default function ManagedInfo() {
           </p>
         </div>
 
-        <div className="mx-auto max-w-7xl pt-8  sm:pt-16 lg:px-8">
+        <div className="mx-auto max-w-5xl py-8  sm:py-16 lg:px-8">
           <div className="relative isolate overflow-hidden bg-gray-900 px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
             <h2 className="text-balance text-4xl font-semibold tracking-tight text-white sm:text-5xl">
               24/7 Personalized IT Support.
