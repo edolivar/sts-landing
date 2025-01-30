@@ -193,6 +193,13 @@ export default function Header({ styles }) {
           >
             SFTP Portal
           </a>
+          <a
+            href="https://sts-elearning.com/"
+            target="_blank"
+            className="text-sm/6 font-semibold text-gray-900"
+          >
+            eLearning
+          </a>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end"></div>
       </nav>
