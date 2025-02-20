@@ -20,6 +20,7 @@ import {
 import { CheckCircleIcon } from "@heroicons/react/20/solid";
 
 import { MinusSmallIcon, PlusSmallIcon } from "@heroicons/react/24/outline";
+import Testimonials from "./helpers/Testimonials";
 
 const actions = [
   {
@@ -398,6 +399,9 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      {/* Testimonials */}
+      <Testimonials />
 
       {/* FAQs */}
       <div
