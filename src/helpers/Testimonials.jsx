@@ -1,16 +1,17 @@
 const featuredTestimonial = {
-  body: "STS have been indispensable partners for our growing business. As seasoned contractors with decentralized offices and equipment across multiple LA construction sites, we rely on their white-glove service and flexibility. STS guided us in building a scalable cloud-based IT infrastructure, providing hardware, software, security, and access support. They excel in both resolving tech issues for our staff and advising on strategic planning for our management team. Their patient, kind approach emphasizes teamwork and personalized service, making them essential to our aggressive growth model. We're grateful to have them as our trusted IT professionals.",
+  body: "STS has been an indispensable partner for our growing business. As seasoned contractors with decentralized offices and equipment across multiple LA construction sites, we rely on their white-glove service and flexibility. STS guided us in building a scalable, cloud-based IT infrastructure, providing hardware, software, security, and access support. They excel at both resolving tech issues for our staff and advising on strategic planning for our management team. Their patient, kind approach emphasizes teamwork and personalized service, making them essential to our aggressive growth model. We're grateful to have them as our trusted IT professionals.",
   author: {
     name: "Boyd Team",
     handle: "Boyd Contracting Inc",
     imageUrl: "/STSCustomerLogos/Boyd_Logo.png",
   },
 };
+
 const testimonials = [
   [
     [
       {
-        body: "Working with STS has been hugely beneficial for our company. We're able to focus on our work and business and not have to worry about the tech/systems/networking etc. They're team is very knowledgeable, professional and responsive. We highly recommend anyone looking for a great partner to consider Gus and his team!",
+        body: "Working with STS has been hugely beneficial for our company. We can focus on our work and business without worrying about tech, systems, or networking. Their team is very knowledgeable, professional, and responsive. We highly recommend Gus and his team to anyone looking for a great partner!",
         author: {
           name: "KT Kim",
           handle: "Solinco",
@@ -19,7 +20,7 @@ const testimonials = [
       },
       // More testimonials...
       {
-        body: "Our firm has been working with STS for years, providing us with a wide range of IT services, including but not limited to network setup, network security, IT support, and workstation setup. Gus is always available day or night for support, his efficiency helps minimize any disruptions we may have to our daily operations. Our security is his top priority, he has helped us implement and roll out security measures allowing us to be proactive to potential threats, giving us peace of mind.",
+        body: "Our firm has been working with STS for years, relying on them for a wide range of IT services, including network setup, network security, IT support, and workstation setup. Gus is always available, day or night, and his efficiency helps minimize any disruptions to our daily operations. Our security is his top priority—he has helped us implement and roll out security measures that allow us to proactively address potential threats, giving us peace of mind.",
         author: {
           name: "PLG Team",
           handle: "Protection Law Group",
@@ -29,7 +30,7 @@ const testimonials = [
     ],
     [
       {
-        body: "I have been using Gus and STS for all of my computing and cyber protection for over 5 years now.  As an Insurance Agency I understand how important cyber security is. In today's computer environment, one wrong move could cost your business tens of thousands of dollars. I highly recommend STS to protect you and your client's online presence.",
+        body: "I have been using Gus and STS for all of my computing and cybersecurity needs for over five years. As an insurance agency, I understand how crucial cybersecurity is. In today's digital environment, one wrong move could cost your business tens of thousands of dollars. I highly recommend STS to protect you and your clients' online presence.",
         author: {
           name: "Joel Versh",
           handle: "Farmers​ Insurance",
@@ -42,7 +43,7 @@ const testimonials = [
   [
     [
       {
-        body: "Working with STS LLC has been a game-changer for our IT needs. They are incredibly responsive, knowledgeable, and always on top of things. They follow through on their commitments and ensure that every request is handled efficiently. The structured system for IT requests is seamless and easy to use, making our workflow much smoother. It's refreshing to have a team who not only knows their stuff but also truly cares about providing excellent support. We highly recommend STS!",
+        body: "Working with STS LLC has been a game-changer for our IT needs. They are incredibly responsive, knowledgeable, and always on top of things. They follow through on their commitments and ensure that every request is handled efficiently. Their structured system for IT requests is seamless and easy to use, making our workflow much smoother. It's refreshing to have a team that not only knows their stuff but also truly cares about providing excellent support. We highly recommend STS!",
         author: {
           name: "Veronica Doering",
           handle: "Summit Advisors LA",
@@ -53,7 +54,7 @@ const testimonials = [
     ],
     [
       {
-        body: "We have been working with STS for several years. Gus and his team have been instrumental in updating our network and our cyber security, along with taking care of our general IT needs. Allowing us to focus on our day-to-day business. Guss is very knowledgeable and able to respond to our inquiries very quickly. We have and will continue to recommend STS.",
+        body: "We have been working with STS for several years. Gus and his team have been instrumental in updating our network and cybersecurity while taking care of our general IT needs, allowing us to focus on our day-to-day business. Gus is very knowledgeable and responds to our inquiries quickly. We have recommended and will continue to recommend STS.",
         author: {
           name: "Gavin Withey",
           handle: "Withey & Co Inc",
@@ -62,7 +63,7 @@ const testimonials = [
       },
       // More testimonials...
       {
-        body: "Our relationship with STS has been transformational for our architecture firm. Their team has consistently demonstrated professionalism and responsiveness. Prior to our partnership, technology management was a constant source of frustration and distraction. However, they have changed our relationship to our network hardware, systems and software entirely. Their expertise and proactive approach have turned IT from a recurring headache into something we rarely even need to discuss.",
+        body: "Our relationship with STS has been transformational for our architecture firm. Their team has consistently demonstrated professionalism and responsiveness. Before our partnership, technology management was a constant source of frustration and distraction. However, they have completely changed our relationship with our network hardware, systems, and software. Their expertise and proactive approach have turned IT from a recurring headache into something we rarely even need to think about.",
         author: {
           name: "K. Ben Loescher",
           handle: "AIA | ICC | LEED AP",
@@ -72,7 +73,6 @@ const testimonials = [
     ],
   ],
 ];
-
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
