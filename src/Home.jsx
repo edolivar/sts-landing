@@ -219,6 +219,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+
         {/* Feature cards */}
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
           <div className="divide-y divide-gray-200 overflow-hidden rounded-lg bg-gray-200 shadow sm:grid sm:grid-cols-2 sm:gap-px sm:divide-y-0">
@@ -306,8 +307,12 @@ export default function Home() {
           </p>
         </div>
       </div>
+
+      {/* Testimonials */}
+      <Testimonials />
+
       {/* Learn more & Contact us */}
-      <div className="pt-14">
+      <div className="pt-8">
         <div
           aria-hidden="true"
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -399,9 +404,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      {/* Testimonials */}
-      <Testimonials />
 
       {/* FAQs */}
       <div

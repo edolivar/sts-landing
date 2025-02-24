@@ -79,7 +79,7 @@ function classNames(...classes) {
 
 export default function Testimonials() {
   return (
-    <div className="relative isolate bg-white pb-32 pt-14 sm:pt-18">
+    <div className="relative isolate bg-white pb-8 pt-20">
       <div
         aria-hidden="true"
         className="absolute inset-x-0 top-1/2 -z-10 -translate-y-1/2 transform-gpu overflow-hidden opacity-30 blur-3xl"
