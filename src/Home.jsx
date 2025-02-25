@@ -137,10 +137,13 @@ export default function Home() {
         </div>
       </div>
       {/* Image section */}
-      <ImageCarousel />
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        {/* Content goes here */}
+        <ImageCarousel />
+      </div>
 
       {/* Feature section */}
-      <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-32 lg:px-8">
+      <div className="mx-auto mt-28 max-w-7xl px-6 sm:mt-32 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
           <h2 className="text-base/6 font-semibold text-stsLight">
             Proactive defense, smart automation, and innovation
@@ -337,7 +340,7 @@ export default function Home() {
             className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#168991] to-[#0c3644] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
           />
         </div>
-        <div className="pt-24 sm:pt-32">
+        <div className="py-20 sm:pt-28">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl text-center">
               <h1 className="text-balance text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
