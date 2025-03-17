@@ -6,7 +6,6 @@ import Footer from "./Footer";
 const PageTemplate = ({ children }) => {
   return (
     <div className="bg-white">
-      {/* Header */}
       <Header />
       <main className="isolate">{children}</main>
       <Footer />

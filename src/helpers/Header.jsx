@@ -29,6 +29,7 @@ import {
   QuestionMarkCircleIcon,
   EnvelopeIcon,
 } from "@heroicons/react/20/solid";
+import Banner from "./Banner";
 
 const services = [
   {
@@ -102,6 +103,7 @@ export default function Header({ styles }) {
 
   return (
     <header className={`relative ${styles ? styles : ""} z-10`}>
+      <Banner />
       <nav
         aria-label="Global"
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
