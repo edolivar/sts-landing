@@ -202,6 +202,13 @@ export default function Header({ styles }) {
           >
             eLearning
           </a>
+          <a
+            href="http://remote.securetechsolutions.biz:21114/static/index.html#/user/login"
+            target="_blank"
+            className="text-sm/6 font-semibold text-gray-900"
+          >
+            Remote Desktop
+          </a>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end"></div>
       </nav>
@@ -284,6 +291,13 @@ export default function Header({ styles }) {
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
                   SFTP Portal
+                </a>
+                <a
+                  href="http://ftp.securetechsolutions.biz"
+                  target="_blank"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                >
+                  Remote Support
                 </a>
               </div>
             </div>
