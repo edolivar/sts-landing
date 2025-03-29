@@ -203,7 +203,7 @@ export default function Header({ styles }) {
             eLearning
           </a>
           <a
-            href="http://remote.securetechsolutions.biz:21114/static/index.html#/user/login"
+            href="https://remote.securetechsolutions.biz"
             target="_blank"
             className="text-sm/6 font-semibold text-gray-900"
           >
