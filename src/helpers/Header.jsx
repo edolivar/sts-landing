@@ -293,11 +293,18 @@ export default function Header({ styles }) {
                   SFTP Portal
                 </a>
                 <a
-                  href="http://ftp.securetechsolutions.biz"
+                  href="https://sts-elearning.com/"
                   target="_blank"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
-                  Remote Support
+                  eLearning
+                </a>
+                <a
+                  href="https://remote.securetechsolutions.biz"
+                  target="_blank"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                >
+                  Remote Desktop
                 </a>
               </div>
             </div>
