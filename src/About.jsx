@@ -1,5 +1,4 @@
 "use client";
-import ImageCarousel from "./helpers/ImageCarousel";
 import PageTemplate from "./helpers/PageTemplate";
 import Contact from "./helpers/Contact";
 
