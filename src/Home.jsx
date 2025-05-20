@@ -131,6 +131,7 @@ export default function Home() {
     <PageTemplate>
       <div className="mx-auto w-full px-8 lg:px-12">
         <div className="pt-5">
+          <h1>DEMO</h1>
           <h2 className="text-center text-xl font-semibold text-stsLight">
             Protect – Automate – Innovate
           </h2>
