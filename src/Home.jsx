@@ -7,7 +7,7 @@ import {
   CubeTransparentIcon,
   CpuChipIcon,
 } from "@heroicons/react/24/outline";
-import ImageCarousel from "./helpers/ImageCarousel";
+import Video from "./helpers/Video.jsx"
 import LogoAnimation from "./helpers/LogoAnimation";
 import PageTemplate from "./helpers/PageTemplate";
 import ScrollToTopLink from "./helpers/ScrollLink";
@@ -131,7 +131,6 @@ export default function Home() {
     <PageTemplate>
       <div className="mx-auto w-full px-8 lg:px-12">
         <div className="pt-5">
-          <h1>DEMO</h1>
           <h2 className="text-center text-xl font-semibold text-stsLight">
             Protect – Automate – Innovate
           </h2>
@@ -140,11 +139,11 @@ export default function Home() {
       {/* Image section */}
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Content goes here */}
-        <ImageCarousel />
+        <Video></Video>
       </div>
 
       {/* Feature section */}
-      <div className="mx-auto mt-28 max-w-7xl px-6 sm:mt-32 lg:px-8">
+      <div className="mx-auto mt-28 max-w-7xl px-6 sm:mt-16 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
           <h2 className="text-base/6 font-semibold text-stsLight">
             Proactive defense, smart automation, and innovation
