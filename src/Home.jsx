@@ -16,9 +16,9 @@ import {
   DisclosureButton,
   DisclosurePanel,
 } from "@headlessui/react";
-
+import AnimatedWords from "./helpers/AnimatedWords.jsx";
 import { CheckCircleIcon } from "@heroicons/react/20/solid";
-
+import ImageCarousel from "./helpers/ImageCarousel.jsx";
 import { MinusSmallIcon, PlusSmallIcon } from "@heroicons/react/24/outline";
 import Testimonials from "./helpers/Testimonials";
 
@@ -131,9 +131,7 @@ export default function Home() {
     <PageTemplate>
       <div className="mx-auto w-full px-8 lg:px-12">
         <div className="pt-5">
-          <h2 className="text-center text-xl font-semibold text-stsLight">
-            Protect – Automate – Innovate
-          </h2>
+          <AnimatedWords />
         </div>
       </div>
       {/* Image section */}
@@ -389,6 +387,8 @@ export default function Home() {
           />
         </div>
       </div>
+
+      <ImageCarousel />
 
       {/* Pricing section */}
       <div className="py-12 sm:py-32">

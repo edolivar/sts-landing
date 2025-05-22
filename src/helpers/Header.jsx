@@ -109,9 +109,9 @@ export default function Header({ styles }) {
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
       >
         <div className="flex lg:flex-1">
-          <Link to="/" className="-m-1.5 p-1.5">
+          <Link to="/" className="mr-5 p-1">
             <span className="sr-only">Secure Tech Solutions</span>
-            <img alt="" src="/sts_cat_icon.svg" className="h-16 w-auto" />
+            <img alt="" src="/sts_cat_icon.svg" className="h-24 w-auto" />
           </Link>
         </div>
         <div className="flex lg:hidden">
@@ -126,7 +126,7 @@ export default function Header({ styles }) {
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
           <Popover className="relative">
-            <PopoverButton className="flex items-center gap-x-1 pl-1 text-sm/6 font-semibold text-gray-900">
+            <PopoverButton className="flex items-center gap-x-1 pl-1 text-lg font-semibold text-stsDark hover:text-stsLight">
               Services
               <ChevronDownIcon
                 aria-hidden="true"
@@ -178,34 +178,34 @@ export default function Header({ styles }) {
             </PopoverPanel>
           </Popover>
 
-          <Link to="/about" className="text-sm/6 font-semibold text-gray-900">
+          <Link to="/about" className="text-base font-semibold text-stsDark hover:text-stsLight">
             About STS
           </Link>
           <a
             href="https://ticket.securetechsolutions.biz/"
             target="_blank"
-            className="text-sm/6 font-semibold text-gray-900"
+            className="text-base font-semibold text-stsDark hover:text-stsLight"
           >
             Ticket Portal
           </a>
           <a
             href="http://ftp.securetechsolutions.biz"
             target="_blank"
-            className="text-sm/6 font-semibold text-gray-900"
+            className="text-base font-semibold text-stsDark hover:text-stsLight"
           >
             SFTP Portal
           </a>
           <a
             href="https://sts-elearning.com/"
             target="_blank"
-            className="text-sm/6 font-semibold text-gray-900"
+            className="text-base font-semibold text-stsDark hover:text-stsLight"
           >
             eLearning
           </a>
           <a
             href="https://remote.securetechsolutions.biz"
             target="_blank"
-            className="text-sm/6 font-semibold text-gray-900"
+            className="text-base font-semibold text-stsDark hover:text-stsLight"
           >
             Remote Desktop
           </a>
