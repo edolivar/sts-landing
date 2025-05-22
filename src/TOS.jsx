@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import PageTemplate from "./helpers/PageTemplate"; // Import PageTemplate
 
@@ -54,11 +55,10 @@ const TermsOfServicePage = () => {
           <li key={sectionId}>
             <Link
               to={`#${sectionId}`}
-              className={`block py-1 px-2 rounded transition-colors ${
-                activeSection === sectionId
+              className={`block py-1 px-2 rounded transition-colors ${activeSection === sectionId
                   ? "bg-[#e1f5fe] text-black"
                   : "text-gray-700 hover:bg-[#e8f5e9]"
-              }`}
+                }`}
               onClick={(e) => {
                 e.preventDefault();
                 scrollToSection(sectionId);
@@ -77,6 +77,10 @@ const TermsOfServicePage = () => {
 
   return (
     <PageTemplate>
+      <Helmet>
+        <title>STS - TOS</title>
+        <meta name="description" content="Review the Terms of Service for SecureTech Solutions to understand the rules, responsibilities, and conditions for using our cybersecurity and IT services." />
+      </Helmet>
       <div className="w-full pt-32 pb-32 mb-16 bg-gradient-to-r from-[#e8f5e9] via-[#e3f2fd] to-[#e1f5fe]">
         <div className="max-w-4xl mx-auto px-8">
           <div className="text-sm text-gray-600 mb-4">

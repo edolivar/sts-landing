@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import PageTemplate from "./helpers/PageTemplate"; // Import PageTemplate
 
@@ -53,11 +54,10 @@ const PrivacyPolicyPage = () => {
           <li key={sectionId}>
             <Link
               to={`#${sectionId}`}
-              className={`block py-1 px-2 rounded transition-colors ${
-                activeSection === sectionId
-                  ? "bg-[#e1f5fe] text-black"
-                  : "text-gray-700 hover:bg-[#e8f5e9]"
-              }`}
+              className={`block py-1 px-2 rounded transition-colors ${activeSection === sectionId
+                ? "bg-[#e1f5fe] text-black"
+                : "text-gray-700 hover:bg-[#e8f5e9]"
+                }`}
               onClick={(e) => {
                 e.preventDefault();
                 scrollToSection(sectionId);
@@ -76,6 +76,11 @@ const PrivacyPolicyPage = () => {
 
   return (
     <PageTemplate>
+      <Helmet>
+        <title>STS - Privacy</title>
+        <meta name="description" content="Read Secure Tech Solutions' Privacy Policy to learn how we collect, use, and protect your personal information when you visit our website or use our services." />
+      </Helmet>
+
       <div className="w-full pt-32 pb-32 mb-16 bg-gradient-to-r from-[#e8f5e9] via-[#e3f2fd] to-[#e1f5fe]">
         <div className="max-w-4xl mx-auto px-8">
           <div className="text-sm text-gray-600 mb-4">

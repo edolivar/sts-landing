@@ -1,4 +1,5 @@
 "use client";
+import { Helmet } from "react-helmet";
 import {
   ArrowPathIcon,
   CloudArrowUpIcon,
@@ -129,6 +130,10 @@ function classNames(...classes) {
 export default function Home() {
   return (
     <PageTemplate>
+      <Helmet>
+        <title>STS - Home</title>
+        <meta name="description" content="Secure Tech Solutions helps businesses strengthen cybersecurity with realistic phishing simulations, security awareness training, and expert consulting tailored to your organization’s needs." />
+      </Helmet>
       <div className="mx-auto w-full px-8 lg:px-12">
         <div className="pt-5">
           <AnimatedWords />

@@ -16,6 +16,7 @@ import {
   CalendarDaysIcon,
   ComputerDesktopIcon,
 } from "@heroicons/react/24/outline";
+import { Helmet } from "react-helmet";
 
 const solutions = [
   {
@@ -143,6 +144,11 @@ import PageTemplate from "./helpers/PageTemplate";
 export default function PlanningInfo() {
   return (
     <PageTemplate>
+      <Helmet>
+        <title>STS - Planning</title>
+        <meta name="description" content="Compare Secure Tech Solutions' service plans to find the right cybersecurity and IT support package for your business. Flexible options designed to meet your security and budget needs." />
+      </Helmet>
+
       <div className="bg-white py-8 sm:py-12">
         <div className="mb-8 mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
