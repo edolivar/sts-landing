@@ -6,10 +6,16 @@ import {
 } from "@heroicons/react/24/outline";
 
 import PageTemplate from "./helpers/PageTemplate";
+import { Helmet } from "react-helmet";
 
 export default function CyberInfo() {
   return (
     <PageTemplate>
+      <Helmet>
+        <title>STS - CyberInfo</title>
+        <meta name="description" content="Explore Secure Tech Solutions' cybersecurity services, including phishing simulations, threat mitigation strategies, and employee training to protect your business from cyberattacks." />
+      </Helmet>
+
       <div className="relative isolate overflow-hidden bg-white py-14 sm:py-24">
         <div
           aria-hidden="true"

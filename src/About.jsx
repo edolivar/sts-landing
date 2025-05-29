@@ -1,5 +1,5 @@
 "use client";
-import ImageCarousel from "./helpers/ImageCarousel";
+import { Helmet } from "react-helmet";
 import PageTemplate from "./helpers/PageTemplate";
 import Contact from "./helpers/Contact";
 
@@ -51,6 +51,10 @@ const values = [
 export default function About() {
   return (
     <PageTemplate>
+      <Helmet>
+        <title>STS - About</title>
+        <meta name="description" content="Learn about Secure Tech Solutions—our mission, team, and commitment to helping businesses defend against cyber threats through expert-led phishing simulations and security training." />
+      </Helmet>
       <div className="relative isolate -z-10">
         <svg
           aria-hidden="true"

@@ -1,4 +1,5 @@
 "use client";
+import { Helmet } from "react-helmet";
 import {
   ArrowPathIcon,
   CloudArrowUpIcon,
@@ -7,7 +8,7 @@ import {
   CubeTransparentIcon,
   CpuChipIcon,
 } from "@heroicons/react/24/outline";
-import ImageCarousel from "./helpers/ImageCarousel";
+import Video from "./helpers/Video.jsx"
 import LogoAnimation from "./helpers/LogoAnimation";
 import PageTemplate from "./helpers/PageTemplate";
 import ScrollToTopLink from "./helpers/ScrollLink";
@@ -16,9 +17,9 @@ import {
   DisclosureButton,
   DisclosurePanel,
 } from "@headlessui/react";
-
+import AnimatedWords from "./helpers/AnimatedWords.jsx";
 import { CheckCircleIcon } from "@heroicons/react/20/solid";
-
+import ImageCarousel from "./helpers/ImageCarousel.jsx";
 import { MinusSmallIcon, PlusSmallIcon } from "@heroicons/react/24/outline";
 import Testimonials from "./helpers/Testimonials";
 
@@ -129,21 +130,23 @@ function classNames(...classes) {
 export default function Home() {
   return (
     <PageTemplate>
+      <Helmet>
+        <title>STS - Home</title>
+        <meta name="description" content="Secure Tech Solutions helps businesses strengthen cybersecurity with realistic phishing simulations, security awareness training, and expert consulting tailored to your organization’s needs." />
+      </Helmet>
       <div className="mx-auto w-full px-8 lg:px-12">
         <div className="pt-5">
-          <h2 className="text-center text-xl font-semibold text-stsLight">
-            Protect – Automate – Innovate
-          </h2>
+          <AnimatedWords />
         </div>
       </div>
       {/* Image section */}
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Content goes here */}
-        <ImageCarousel />
+        <Video></Video>
       </div>
 
       {/* Feature section */}
-      <div className="mx-auto mt-28 max-w-7xl px-6 sm:mt-32 lg:px-8">
+      <div className="mx-auto mt-28 max-w-7xl px-6 sm:mt-16 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
           <h2 className="text-base/6 font-semibold text-stsLight">
             Proactive defense, smart automation, and innovation
@@ -389,6 +392,8 @@ export default function Home() {
           />
         </div>
       </div>
+
+      <ImageCarousel />
 
       {/* Pricing section */}
       <div className="py-12 sm:py-32">

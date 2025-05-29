@@ -5,6 +5,7 @@ import {
   ShieldCheckIcon,
 } from "@heroicons/react/24/outline";
 import PageTemplate from "./helpers/PageTemplate";
+import { Helmet } from "react-helmet";
 
 const features = [
   {
@@ -36,6 +37,10 @@ const features = [
 export default function MFAInfo() {
   return (
     <PageTemplate>
+      <Helmet>
+        <title>STS - MFA</title>
+        <meta name="description" content="Learn how Secure Tech Solutions helps businesses implement multi-factor authentication (MFA) to strengthen account security, prevent unauthorized access, and meet compliance requirements." /> </Helmet>
+
       <div className="bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-5">

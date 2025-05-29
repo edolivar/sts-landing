@@ -1,9 +1,14 @@
 import PageTemplate from "./helpers/PageTemplate";
 import ScrollToTopLink from "./helpers/ScrollLink";
+import { Helmet } from "react-helmet";
 
 export default function ManagedInfo() {
   return (
     <PageTemplate>
+      <Helmet>
+        <title>STS - ManagedIT</title>
+        <meta name="description" content="Secure Tech Solutions offers reliable managed IT services, including proactive monitoring, system maintenance, and cybersecurity support to keep your business running securely and efficiently." />
+      </Helmet>
       <div className="bg-white ">
         <div className="mx-auto py-9 max-w-5xl text-left px-6 lg:px-8">
           <h2 className="mt-2 text-6xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
