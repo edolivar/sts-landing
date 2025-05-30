@@ -11,7 +11,8 @@ const links = [
   { url: '/managed-info', changefreq: 'monthly', priority: 0.7 },
   { url: '/assetmgmt-info', changefreq: 'monthly', priority: 0.7 },
   { url: '/mfa-info', changefreq: 'monthly', priority: 0.7 },
-
+  { url: '/terms-of-service', changefreq: 'monthly', priority: 0.7 },
+  { url: '/privacy-policy', changefreq: 'monthly', priority: 0.7 },
   // Add more static routes as needed
 ];
 
