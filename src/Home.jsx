@@ -296,7 +296,7 @@ export default function Home() {
         </div>
         <LogoAnimation />
 
-        <div className="mt-32 flex justify-center">
+        <div className="mt-20 flex justify-center">
           <p className="relative rounded-full px-4 py-1.5 text-sm/6 text-gray-600 ring-1 ring-inset ring-gray-900/10 hover:ring-gray-900/20">
             <span className="hidden md:inline">
               City of Fort Lauderdale scammed out of $1.2 million during
