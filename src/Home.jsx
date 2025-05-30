@@ -392,7 +392,9 @@ export default function Home() {
         </div>
       </div>
 
-      <ImageCarousel />
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <ImageCarousel />
+      </div>
 
       {/* Pricing section */}
       <div className="py-12 sm:py-32">
