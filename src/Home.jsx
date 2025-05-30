@@ -141,12 +141,11 @@ export default function Home() {
       </div>
       {/* Image section */}
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* Content goes here */}
-        <Video></Video>
+        <Video />
       </div>
 
       {/* Feature section */}
-      <div className="mx-auto mt-28 max-w-7xl px-6 sm:mt-16 lg:px-8">
+      <div className="mx-auto mt-16 max-w-7xl px-6 sm:mt-16 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
           <h2 className="text-base/6 font-semibold text-stsLight">
             Proactive defense, smart automation, and innovation
