@@ -18,6 +18,6 @@ const links = [
 const stream = new SitemapStream({ hostname: 'https://stsit.biz' });
 
 streamToPromise(Readable.from(links).pipe(stream)).then((data) => {
-  createWriteStream('./dist/sitemap.xml').write(data.toString());
+  createWriteStream('./public/sitemap.xml').write(data.toString());
 });
 
