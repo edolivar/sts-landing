@@ -75,6 +75,8 @@ const LogoCarouselWithYourData = () => {
   const wrapperStyle = {
     maxWidth: '60%',
     margin: '0 auto',
+    maskImage: 'linear-gradient(to right, transparent 0, black 128px, black calc(100% - 200px), transparent 100%)',
+    WebkitMaskImage: 'linear-gradient(to right, transparent 0, black 128px, black calc(100% - 200px), transparent 100%)',
   };
 
   useEffect(() => {
